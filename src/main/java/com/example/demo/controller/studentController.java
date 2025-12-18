@@ -38,6 +38,7 @@ public class studentController {
             @RequestBody studentEntity student) {
         return service.updateStudent(id, student);
     }
+    
 
     @DeleteMapping("/delete/{id}")
     public String deleteStudent(@PathVariable long id) {
